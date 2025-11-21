@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Khai báo phông chữ tùy chỉnh của bạn --- */
+/* Đặt tên chung cho nhóm phông chữ, ví dụ: 'MyThemeFont' */
+
+@font-face {
+  font-family: 'DrukWide'; /* Đặt tên cho phông chữ của bạn */
+  src: url('../fonts/DrukWideBold.ttf') format('opentype');
+  font-weight: 400; /* 400 là 'normal' hoặc 'regular' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction';
+  src: url('../fonts/Redaction-Italic.otf') format('truetype');
+  font-weight: 400; /* 700 là 'bold' */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Redaction';
+  src: url('../fonts/Redaction-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🎯 Zoom-Safe Properties - Giữ layout khi zoom */
+html, body {
+  /* Đảm bảo zoom không làm thay đổi layout */
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+/* Đảm bảo VideoImg scale đúng khi zoom */
+[role="region"][aria-label="Media slider"] {
+  /* Giữ aspectRatio không thay đổi khi zoom */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Global variables for media gaps (percentage-based with clamp fallbacks)
+   - Keeps spacing proportional to container width, but bounded by min/max px
+   - Adjust `--media-gap` to tune spacing globally
+*/
+:root {
+  --media-gap: clamp(8px, 1%, 32px); /* min 8px, preferred 1% of container, max 32px */
+  --media-margin: clamp(6px, 0.6%, 20px);
+}
+
+/* Utility: keep certain grids using the media gap by default */
+.media-gap {
+  gap: var(--media-gap);
+}
+
+.media-margin {
+  margin: var(--media-margin);
+}
+
+/* Text sizing - dùng rem thay vì px để scale với font-size của root */
+/* Nếu user zoom, font-size root sẽ scale, tất cả rem cũng scale theo */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+#section01-wrapper {
+  transform-origin: top left;
+  /* Giá trị scale khởi điểm */
+  transform: scale(1);
+}
+
+@media (min-width: 1400px) {
+  #section01-wrapper {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1400px) {
+  #section01-wrapper {
+    transform: scale(calc(100vw / 1400));
+  }
+}

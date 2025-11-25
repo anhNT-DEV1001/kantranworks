@@ -73,7 +73,7 @@ export default function Section02() {
   ] as any;
   const [currentSlideImgRC, setCurrentSlideImgRC] = useState(0);
   return (
-    <div className="mt-10 grid grid-cols-3 grid-rows-1 gap-0">
+    <div className="mt-10 grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-0">
       <section className="mb-2 ml-2 mt-2">
         <div className="flex justify-center items-center bg-black">
           <VideoImg media={arrMedia} alt='Box2' clickToNext={true} onSlideChange={(index) => setCurrentSlide(index)}/>

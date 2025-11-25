@@ -95,7 +95,7 @@ export default function Section01() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentSlideC, setCurrentSlideC] = useState(0);
   return (
-    <div className="grid grid-cols-2 grid-rows-1">
+    <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1">
       {/* box1 */}
       <section className="bg-primary mb-2 mt-2 ml-2">
         <div className="bg-black flex justify-center items-center">

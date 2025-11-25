@@ -64,7 +64,7 @@ export default function Section03() {
   const [currentSlideLT, setCurrentSlideLT] = useState(0);
   const [currentSlideC, setCurrentSlideC] = useState(0);
   return(
-  <div className="grid grid-cols-2 grid-rows-1 gap-0 mt-10">
+  <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-0 mt-10">
     <section className="m-2">
       <div className="bg-black flex justify-center items-center" >
         {/* <img src="" alt="Test1" /> */}

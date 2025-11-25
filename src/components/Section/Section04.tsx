@@ -62,7 +62,7 @@ export function Section04() {
   return(
     <>
       <div className='overflow-hidden'>
-        <div className="grid grid-cols-3 grid-rows-1 gap-0 mt-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-0 mt-10 ">
           <section className="mb-2 ml-2 mt-2">
           <div className="flex justify-center items-center bg-black">
             <VideoImg media={arrImgKat} clickToNext={true} onSlideChange={(index) => setCurrentSlideImgKat(index)}/>

@@ -28,10 +28,10 @@ export default function Header() {
           <a href="#home">Home</a>
         </li>
         <li
-          className={`${getLinkClass('archive')} cursor-pointer`} // Thêm cursor-pointer
+          className={`${getLinkClass('archive')} cursor-pointer`} 
           onClick={() => setActiveLink('archive')}
         >
-          Archive
+          <a href="#archive">Archive</a> 
         </li>
         <li
           className={getLinkClass('profile')}

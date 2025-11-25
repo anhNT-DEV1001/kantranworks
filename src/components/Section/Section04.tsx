@@ -61,53 +61,55 @@ export function Section04() {
   const [currentSlideImgB, setCurrentSlideImgB] = useState(0);
   return(
     <>
-      <div className="grid grid-cols-3 grid-rows-1 gap-0 mt-10">
-        <section className="mb-2 ml-2 mt-2">
-        <div className="flex justify-center items-center bg-black">
-          <VideoImg media={arrImgKat} clickToNext={true} onSlideChange={(index) => setCurrentSlideImgKat(index)}/>
-        </div>
-        <div className=" pb-5 flex justify-between">
-            <div className='font-display'>KAT</div>
-              <div className='text-right font-display text-caption-sm'>
-              {currentSlideImgKat + 1}/{arrImgKat.length}
-            </div>
-          </div> 
-          <div className="text-body-md">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam tempore eligendi, magni ad molestiae quaerat ipsam officia laudantium asperiores illum aperiam! Consequatur molestias ex incidunt labore fugit deleniti vel ea?
-          </div>
-        </section>
-        <section className="m-2">
+      <div className='overflow-hidden'>
+        <div className="grid grid-cols-3 grid-rows-1 gap-0 mt-10 ">
+          <section className="mb-2 ml-2 mt-2">
           <div className="flex justify-center items-center bg-black">
-            <VideoImg media={arrImgB} clickToNext={true} onSlideChange={(index) => setCurrentSlideImgB(index)}/>
+            <VideoImg media={arrImgKat} clickToNext={true} onSlideChange={(index) => setCurrentSlideImgKat(index)}/>
           </div>
           <div className=" pb-5 flex justify-between">
-            <div className='font-display'>Beyond the Ashes</div>
-              <div className='text-right font-display text-caption-sm'>
-              {currentSlideImgB + 1}/{arrImgB.length}
+              <div className='font-display'>KAT</div>
+                <div className='text-right font-display text-caption-sm'>
+                {currentSlideImgKat + 1}/{arrImgKat.length}
+              </div>
+            </div> 
+            <div className="text-body-md">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam tempore eligendi, magni ad molestiae quaerat ipsam officia laudantium asperiores illum aperiam! Consequatur molestias ex incidunt labore fugit deleniti vel ea?
             </div>
-          </div> 
-          <div className="text-body-md">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam tempore eligendi, magni ad molestiae quaerat ipsam officia laudantium asperiores illum aperiam! Consequatur molestias ex incidunt labore fugit deleniti vel ea?
-          </div>
-        </section>
-        <section className="mb-2 mr-2 mt-2">
-          <div className="flex justify-center items-center bg-primary">
-            <VideoImg media={arrImgLego} clickToNext={true} onSlideChange={(index) => setCurrentSlideImgLego(index)}/>
-          </div>
-          <div className=" pb-5 flex justify-between">
-            <div className='font-display'>Lego Type Experiment</div>
-              <div className='text-right font-display text-caption-sm'>
-              {currentSlideImgLego + 1}/{arrImgLego.length}
+          </section>
+          <section className="m-2">
+            <div className="flex justify-center items-center bg-black">
+              <VideoImg media={arrImgB} clickToNext={true} onSlideChange={(index) => setCurrentSlideImgB(index)}/>
             </div>
-          </div> 
-          <div className="text-body-md">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam tempore eligendi, magni ad molestiae quaerat ipsam officia laudantium asperiores illum aperiam! Consequatur molestias ex incidunt labore fugit deleniti vel ea?
-          </div>
-        </section>
-    </div>
-    <div className="flex-none ml-2 mr-2 mt-10  bg-primary">
-      <img src={profile} alt="Img" className="w-full h-auto block bg-primary" />
-    </div>
+            <div className=" pb-5 flex justify-between">
+              <div className='font-display'>Beyond the Ashes</div>
+                <div className='text-right font-display text-caption-sm'>
+                {currentSlideImgB + 1}/{arrImgB.length}
+              </div>
+            </div> 
+            <div className="text-body-md">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam tempore eligendi, magni ad molestiae quaerat ipsam officia laudantium asperiores illum aperiam! Consequatur molestias ex incidunt labore fugit deleniti vel ea?
+            </div>
+          </section>
+          <section className="mb-2 mr-2 mt-2">
+            <div className="flex justify-center items-center bg-primary">
+              <VideoImg media={arrImgLego} clickToNext={true} onSlideChange={(index) => setCurrentSlideImgLego(index)}/>
+            </div>
+            <div className=" pb-5 flex justify-between">
+              <div className='font-display'>Lego Type Experiment</div>
+                <div className='text-right font-display text-caption-sm'>
+                {currentSlideImgLego + 1}/{arrImgLego.length}
+              </div>
+            </div> 
+            <div className="text-body-md">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam tempore eligendi, magni ad molestiae quaerat ipsam officia laudantium asperiores illum aperiam! Consequatur molestias ex incidunt labore fugit deleniti vel ea?
+            </div>
+          </section>
+      </div>
+      <div className="flex-none ml-2 mr-2 mt-20 bg-primary mb-2"> 
+        <img src={profile} alt="Img" className="w-full h-auto block" />
+      </div>
+      </div>
     </>
   )
 }

@@ -74,7 +74,10 @@ export function Section04() {
               </div>
             </div> 
             <div className="text-body-md">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam tempore eligendi, magni ad molestiae quaerat ipsam officia laudantium asperiores illum aperiam! Consequatur molestias ex incidunt labore fugit deleniti vel ea?
+              A stencil serif typeface that explore the potential use of ligatures, experimenting with how <br className='m-0'/>separated strokes can merge into connected form
+            </div>
+            <div className="pt-4 text-caption-md">
+              <p>2024, Typeface</p>
             </div>
           </section>
           <section className="m-2">
@@ -88,7 +91,16 @@ export function Section04() {
               </div>
             </div> 
             <div className="text-body-md">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam tempore eligendi, magni ad molestiae quaerat ipsam officia laudantium asperiores illum aperiam! Consequatur molestias ex incidunt labore fugit deleniti vel ea?
+              <p>Beyond the Ashes is a publication that delves into the background of Joss Paper, or Vàng mã,</p> 
+              <p>while introducing its various types. The book also serves as a sensory and interactive </p>
+              <p>experience, allowing readers to touch and explore real examples of Joss Paper, creating</p> 
+              <p>connection to the tradition itself.</p>
+            </div>
+            <div className="pt-4 text-caption-md">
+              <p>2024</p>
+              <p>Typeface: Vina Sans, Caxton</p>
+              <p>Dimension: 210x270x37</p>
+              <p>Number of pages: 254 pages</p>
             </div>
           </section>
           <section className="mb-2 mr-2 mt-2">
@@ -102,11 +114,16 @@ export function Section04() {
               </div>
             </div> 
             <div className="text-body-md">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam tempore eligendi, magni ad molestiae quaerat ipsam officia laudantium asperiores illum aperiam! Consequatur molestias ex incidunt labore fugit deleniti vel ea?
+              Typography experiment using lego,
+            </div>
+            <div className="pt-4 text-caption-md">
+              <p>2024</p>
+              <p>3D Render</p>
+              <p>Artwork by Natasha Lucas, Jurriaan Schrofer</p>
             </div>
           </section>
       </div>
-      <div className="flex-none ml-2 mr-2 mt-20 bg-primary mb-2"> 
+      <div className="flex-none ml-2 mr-2 mt-40 bg-primary mb-2"> 
         <img src={profile} alt="Img" className="w-full h-auto block" />
       </div>
       </div>
